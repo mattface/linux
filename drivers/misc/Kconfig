@@ -518,6 +518,12 @@ config VCPU_STALL_DETECTOR
 
 	  If you do not intend to run this kernel as a guest, say N.
 
+config SPAM_KMSG
+    	tristate "Spam kmsg module"
+	default m
+	help
+          Provides a kernel module to spam kmsg with junk strings
+
 source "drivers/misc/c2port/Kconfig"
 source "drivers/misc/eeprom/Kconfig"
 source "drivers/misc/cb710/Kconfig"
